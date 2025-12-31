@@ -86,7 +86,7 @@ body {
     }
 
     .panel h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         left: 45%;
         top: 25%;
         transform: translate(-50%, -50%);
@@ -95,6 +95,26 @@ body {
         margin-top: 20px;
     }
 
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7) {
+        display: none;
+    }
+}
+
+@media(max-width: 480px){
+    .container {
+        width: 100vw;
+    }
+
+    .panel {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .panel:nth-of-type(5),
     .panel:nth-of-type(6),
     .panel:nth-of-type(7) {
         display: none;
