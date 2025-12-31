@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -36,15 +37,18 @@ body {
 }
 
 .panel h1 {
-    font-size: 5rem;
+    font-size: 5em;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'BBH Bartle', sans-serif;
+    line-height: 1.5;
     position: absolute;
     border-radius: 10px;
     top: 50%;
-    left: 40%;
+    left: 35%;
     transform: translate(-50%, -50%);
     opacity: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .panel h3 {
