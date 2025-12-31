@@ -1,1 +1,1 @@
-# 50 HTML, CSS, JS Projects
+# 50 Mini Projects with HTML, CSS, JS
