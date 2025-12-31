@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Mystery+Quest&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3489db;
+    --secondary-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Mystery Quest', cursive;
+    background-color:hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 4em;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 100px;
+    font-style:normal;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+        -1px  0   0 #000,
+         1px  0   0 #000,
+         0   -1px 0 #000,
+        0    1px 0 #000;
+        
+    }
+
+.container {
+    background-color:aliceblue;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    position: relative;
+    max-width: 100%;
+    width: 700px;
+}
+
+.progress-container::before {
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 100%;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 0%;
+    z-index: 2;
+    transition: 0.4s ease;
+}
+
+.circle {
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 3px solid var(--secondary-color);
+    position: relative;
+    z-index: 3;
+    transition: .4s ease;
+}
+
+.circle.active {
+    border-color: var(--primary-color);
+    color: black;
+    border-width: 5px;
+}
+
+.btn {
+    background-color:#ffb3de;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 5px;
+    z-index: 1;
+    text-shadow: 
+        -1px -1px 0 hotpink,  
+         1px -1px 0 hotpink,
+        -1px  1px 0 hotpink,
+         1px  1px 0 hotpink,
+        -1px  0   0 hotpink,
+         1px  0   0 hotpink,
+         0   -1px 0 hotpink,
+         0    1px 0 hotpink;
+    
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+border: 2px solid hotpink;}
+
+.btn:hover {
+    background-color: #ffd1df;
+}
+
+.btn:disabled {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    cursor: not-allowed;
+    text-shadow: none;
+}
