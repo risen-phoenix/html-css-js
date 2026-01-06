@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    background-color: blueviolet;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: rgb(61, 4, 107);
+    text-decoration: none;
+
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid 2px #7a07c7;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #7a07c7;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active {
+    outline: none;
+    transform: scale(0.95);
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 2px #fff;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    color: #fff;    
+    margin: 40px 0;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom-color: #dfc3f1;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #fff;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 1.2rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color:#dfc3f1;
+    transform: translateY(-30px);
+}
