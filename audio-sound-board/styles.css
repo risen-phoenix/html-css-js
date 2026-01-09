@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+:root {
+    --bg-sound-btn: no-repeat, center, 50%, contain;
+}
+
+body {
+  background-color: rgba(13, 13, 17, 0.8);
+  background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 60%;
+  max-height: 80%;
+  width: 600px;
+  height: 800px;
+}
+
+h1 {
+  margin-top: 30px;
+  display: block;
+  font-size: 3rem;
+  background-color: rgba(162, 0, 255, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+#buttons {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.btn {
+  background-color: black;
+  color: whitesmoke;
+  display: inline-block;
+  margin: 1rem;
+  width: 55%;
+  height: 28%;
+  padding: 1.5rem 1rem;
+  flex: 0 0 calc(50% - 2rem);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(162, 0, 255, 0.5);
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(162, 0, 255, 0.8);
+}
+
+.btn:focus {
+    outline: none;
+    opacity: 0.7;
+}
+
+#applause {
+    /* background-image: url("icons/hands-clapping-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%; */
+    background: url("icons/hands-clapping-solid.svg") contain center no-repeat 50%;
+}
+
+#boo {
+    background-image: url("icons/thumbs-down-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#gasp {
+    background-image: url("icons/face-surprise-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#wrong {
+    background-image: url("icons/x-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#victory {
+    background-image: url("icons/trophy-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+#tada {
+    background-image: url("icons/wand-magic-sparkles-solid.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
